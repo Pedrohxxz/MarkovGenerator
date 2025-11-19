@@ -287,7 +287,7 @@ return (
             Gabriel, Guilherme, Gustavo, Janaina, Silas, Pedro Henrique
         </p>
         <p>
-            <a>Link do repositório do projeto!</a>
+            <a href='https://github.com/Pedrohxxz/MarkovGenerator' target='_blank' rel="noopener noreferrer">Link do repositório do projeto!</a>
         </p>
         </div>
     </div>
