@@ -409,6 +409,10 @@ color: #6b7280;
 font-size: 0.875rem;
 }
 
+.markov-footer a {
+    color: rgb(80, 202, 156); 
+}
+
 .footer-names {
 margin-top: 0.25rem;
 }
