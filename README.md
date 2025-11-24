@@ -216,14 +216,14 @@ probabilidades: {
 
 <div align="center">
 
-| Nome               | Contribuição             |
-| ------------------ | ------------------------ |
-| **Gabriel**        | Desenvolvimento e Design |
-| **Janaina**        | Lógica e Algoritmos      |
-| **Gustavo**        | Interface e UX           |
-| **Guilherme**      | Documentação e Testes    |
-| **Silas**          | Matemática e Validação   |
-| **Pedro Henrique** | Integração e Deploy      |
+| Nome               | Contribuição             | Github                   |
+| ------------------ | ------------------------ | ------------------------ |
+| **Gabriel**        | Desenvolvimento e Design | [@teixaf](https://github.com/teixaf)                     |
+| **Janaina**        | Lógica e Algoritmos      | [@janainafmonteiro](https://github.com/janainafmonteiro)                     |
+| **Gustavo**        | Interface e UX           | [@GustavoGabrielRC](https://github.com/GustavoGabrielRC)                     |
+| **Guilherme**      | Documentação e Testes    | [@Guilherme-Vieira-Souza](https://github.com/Guilherme-Vieira-Souza)                     |
+| **Silas**          | Matemática e Validação   | [@SilasAlefe](https://github.com/SilasAlefe)                     |
+| **Pedro Henrique** | Integração e Deploy      | [@Pedrohxxz](https://github.com/Pedrohxxz)|
 
 ### 👩‍🏫 Orientação
 
