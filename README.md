@@ -68,7 +68,7 @@ Cadeias de Markov são modelos matemáticos que descrevem uma sequência de even
 
 ## 🚀 Demonstração
 
-### 📸 Capturas de Tela
+### 📸 Captura de Tela
 
 ![Amostra da interface](https://res.cloudinary.com/dw0qtsos5/image/upload/v1763581971/Captura_de_tela_de_2025-11-19_16-51-15_jggwuo.png)
 
@@ -111,7 +111,7 @@ gato dorme o gato mia o cão late o gato
 
 ```bash
 # 1️⃣ Clone o repositório
-git clone https://github.com/seu-usuario/gerador-markov.git
+git clone https://github.com/Pedrohxxz/MarkovGenerator.git
 
 # 2️⃣ Entre na pasta do projeto
 cd gerador-markov
