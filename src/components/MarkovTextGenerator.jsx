@@ -1,9 +1,18 @@
-import React, { useState, useMemo } from 'react';
-import { Sparkles, PlayCircle, RefreshCw, Book, TrendingUp, Info } from 'lucide-react';
-import './MarkovTextGenerator.css';
+import React, { useState, useMemo } from "react";
+import {
+Sparkles,
+PlayCircle,
+RefreshCw,
+Book,
+TrendingUp,
+Info,
+} from "lucide-react";
+import "./MarkovTextGenerator.css";
 
 const MarkovTextGenerator = () => {
-const [texto, setTexto] = useState("o gato dorme o gato corre o gato mia o cão late o cão dorme o gato olha o cão late o cão olha");
+const [texto, setTexto] = useState(
+    "o gato dorme o gato corre o gato mia o cão late o cão dorme o gato olha o cão late o cão olha"
+);
 const [tamanho, setTamanho] = useState(10);
 const [palavraInicial, setPalavraInicial] = useState("");
 const [textoGerado, setTextoGerado] = useState("");
@@ -11,7 +20,6 @@ const [isGenerating, setIsGenerating] = useState(false);
 const [showTransitions, setShowTransitions] = useState(false);
 const [error, setError] = useState("");
 const [animatedWords, setAnimatedWords] = useState([]);
-
 
 const { transicoes, palavrasDisponiveis } = useMemo(() => {
     const palavras = texto.toLowerCase().trim().split(/\s+/);
@@ -107,9 +115,7 @@ return (
             <Sparkles className="icon-sparkle icon-pulse" />
         </div>
         <p className="subtitle">Cadeia de Markov • Universidade Salvador</p>
-        <p className="group-info">
-            Grupo nº 6 • Prof.ª Ivana Barreto Matos
-        </p>
+        <p className="group-info">Grupo nº 6 • Prof.ª Ivana Barreto Matos</p>
         </div>
 
         <div className="markov-grid">
@@ -185,9 +191,7 @@ return (
                 className="toggle-words-btn"
             >
                 <Info className="info-icon" />
-                <span>
-                Palavras Disponíveis ({palavrasDisponiveis.length})
-                </span>
+                <span>Palavras Disponíveis ({palavrasDisponiveis.length})</span>
             </button>
 
             {showTransitions && (
@@ -215,30 +219,30 @@ return (
                 <h2 className="panel-title">Texto Gerado</h2>
             </div>
 
-            {textoGerado ? (
+            {textoGerado || isGenerating ? (
                 <div className="result-content">
                 <div className="generated-text-box">
                     <p className="generated-text">
-                    {isGenerating ? (
-                        animatedWords.map((palavra, idx) => (
-                        <span
+                    {isGenerating
+                        ? animatedWords.map((palavra, idx) => (
+                            <span
                             key={idx}
                             className="animated-word"
-                            style={{ animationDelay: `${idx * 0.1}s` }}
-                        >
-                            {palavra}
-                        </span>
+                              style={{ animationDelay: `${idx * 0.1}s` }}
+                            >
+                            {palavra}{" "}
+                            </span>
                         ))
-                    ) : (
-                        textoGerado
-                    )}
+                        : textoGerado}
                     </p>
                 </div>
 
                 <div className="word-count">
                     <span>Total de palavras:</span>
                     <span className="count-number">
-                    {textoGerado.split(" ").length}
+                    {isGenerating
+                        ? animatedWords.length
+                        : textoGerado.split(" ").length}
                     </span>
                 </div>
                 </div>
@@ -287,7 +291,13 @@ return (
             Gabriel, Guilherme, Gustavo, Janaina, Silas, Pedro Henrique
         </p>
         <p>
-            <a href='https://github.com/Pedrohxxz/MarkovGenerator' target='_blank' rel="noopener noreferrer">Link do repositório do projeto!</a>
+            <a
+            href="https://github.com/Pedrohxxz/MarkovGenerator"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            Link do repositório do projeto!
+            </a>
         </p>
         </div>
     </div>
